@@ -1,0 +1,13 @@
+{
+  "userid": "",
+  "mailserver": "localhost",
+  "mailport": 587,
+  "mailuser": "",
+  "mailpass": "",
+  "starttoken": "",
+  "recipient": "",
+  "stop_on_success": true,
+  "stop_on_fail": true,
+  "stop_on_tokenfail": true,
+  "sys_stop": false
+}

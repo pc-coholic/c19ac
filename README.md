@@ -11,6 +11,17 @@ appointments available within the BayIMCO system for a given user.
 * If you haven't confirmed your phone number after having been invited to select an appointment, this will not work.
 * python3.something
 
+**Important Notice**
+
+The `/api/v1/citizens/{userUUID}/appointments/next`-endpoint is heavily ratelimited (about 30 requests/15 minutes). 
+After hitting the limit, it will only return `404` and behave like if there are no appointments available.
+
+Also: Be aware that *the powers that be*™ do not appreciate services like https://impformation.bayern/ and might send 
+the LKA to your door, claiming your script might be causing 10% and more of the daily server load... Proceed at your 
+own risk. But do let me know if that happens to you - I'd love to share a good laugh with you.
+
+You might also want to use the newer toolkit available at https://github.com/pc-coholic/impformation.bayern/ as it 
+implements the login-sequence and avoids running into issues with expired `refresh_token`s.
 
 **Installation**
 
